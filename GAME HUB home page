@@ -1,1 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>GameHub - Home</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    body {
+      background: linear-gradient(to right, #0f2027, #203a43, #2c5364);
+      color: white;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      text-align: center;
+      padding: 20px;
+    }
+    .background-video {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1; /* Ensures it stays behind other content */
+}
+    header {
+      margin-bottom: 50px;
+    }
+
+    h1 {
+      font-size: 3rem;
+      margin-bottom: 10px;
+      color: #00ffcc;
+    }
+
+    p {
+      font-size: 1.2rem;
+      color: #cccccc;
+    }
+
+    .button-group {
+      margin-top: 40px;
+    }
+
+    button {
+      background-color: #00ffcc;
+      color: black;
+      border: none;
+      padding: 15px 30px;
+      margin: 10px;
+      font-size: 1rem;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: background 0.3s ease;
+    }
+
+    button:hover {
+      background-color: #00ccaa;
+    }
+
+    footer {
+      position: absolute;
+      bottom: 10px;
+      font-size: 0.9rem;
+      color: #888;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>🎮 Welcome to GameHub</h1>
+    <p>Your gateway to awesome browser games!</p>
+  </header>
+  <video class="background-video" autoplay loop muted>
+    <source src="http://localhost/gamehub/bg%20video/VN20250410_222328.mp4" type="video/mp4">
+</video>
+<p>Sing in to continue</p>
+  <div class="button-group">
+    <button onclick="location.href='http://localhost/sign%20in/index.php'">Sign In</button>
+    <!-- <button onclick="alert('More features coming soon!')">Explore Games</button> -->
+  </div>
+
+  <footer>
+    &copy; GameHub. created and designed by CSC students of GACR
+  </footer>
+
+</body>
+</html>
 

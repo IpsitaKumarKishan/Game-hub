@@ -1,1 +1,1 @@
-language used -- HTML,CSS,PHP,mySQL
+language used -- HTML,CSS,JS,PHP,mySQL
